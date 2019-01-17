@@ -1,15 +1,25 @@
 .home {
-  .header-div {
+
+  .header-content {
     border-bottom: 2px dashed @navigation-border;
     width: 100%;
-    padding-bottom: 4%;
-  }
-
+    padding: 2% 0;
+  
   .top-line {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
+      align-items: baseline;
+      padding-bottom: 4%;
+      border-bottom: 2px dashed @navigation-border;
     }
+    img {
+      padding-bottom: 4%;
+    }
+    p {
+      padding: 2% 0;
+    }
+  }
     .content-section {
       margin: 30px 0;
       display: flex;
@@ -62,7 +72,9 @@
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
-
+    .btn {
+      .custom-button(@button-bg);
+    }
     .destination {
       width: 30%;
       margin-bottom: 30px;
