@@ -1,0 +1,64 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Fun Bus Travel Agency - Solution</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Roboto" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+</head>
+<div class="container contact">
+    <header>
+        <section class="header-content">
+            <div class="top-line">
+                <h1>Fun Bus</h1>
+                <nav class="rotate-scale-up">
+                    <a href="index.html">Home</a>
+                    <a href="#">About Us</a>
+                    <a href="#">Blog</a>
+                    <a href="contact.html">Contact</a>
+                </nav>
+            </div>
+            <div class="line"></div>
+            <img src="img/fun-bus.jpg">
+        </section>
+
+    </header>
+
+    <form action="action_page.php">
+
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+        <label for="phone">Phone Number</label>
+        <input type="text" id="phone" name="lastname" placeholder="Your phone number">
+
+        <label for="email">E-mail</label>
+        <input type="text" id="email" name="email" placeholder="Your E-mail address here">
+
+        <label for="country">Vacation Package</label>
+        <select id="package" name="package">
+            <option value="australia">Deluxe Cruise</option>
+            <option value="canada">Minimalist Getaway</option>
+            <option value="usa">Grand Royal</option>
+        </select>
+
+        <label for="subject">Special Instructions</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+        <input type="submit" value="Submit">
+
+    </form>
+    <footer class="footer">
+        <p>Copyright Fun Bus 2018</p>
+    </footer>
+</div>
+
+<!--  PHONE # VACATION PACKAGE SUBMIT BTN EMAIL SPECIAL INSTRUCTIONS -->
