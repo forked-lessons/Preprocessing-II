@@ -1,0 +1,6 @@
+nav {
+  align-self: flex-end;
+}
+nav nav a {
+  padding: 10px;
+}
