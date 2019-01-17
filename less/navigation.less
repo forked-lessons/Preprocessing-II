@@ -9,12 +9,14 @@ nav {
     }
     a {
         margin: 20px;
-        text-decoration: none;
         color: @shark;
+        text-decoration: none;
         @media @mobile {
             font-size:1.2rem;
         }
-
+        &:hover {
+            text-decoration: underline;
+        }
     }
 }
 
