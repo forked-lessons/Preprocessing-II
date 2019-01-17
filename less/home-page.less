@@ -1,17 +1,25 @@
 .home {
-
   .header-content {
     border-bottom: 2px dashed @navigation-border;
     width: 100%;
     padding: 2% 0;
   
-  .top-line {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: baseline;
-      padding-bottom: 4%;
-      border-bottom: 2px dashed @navigation-border;
+    .top-line {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: baseline;
+        padding-bottom: 4%;
+        border-bottom: 2px dashed @navigation-border;
+
+        @media @mobile {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          padding: 0;
+          margin: 0;
+        }
+      
     }
     img {
       padding-bottom: 4%;
@@ -20,32 +28,44 @@
       padding: 2% 0;
     }
   }
-    .content-section {
-      margin: 30px 0;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
+  .content-section {
+    margin: 30px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  @media @mobile {
+    width: 100%;
+    flex-direction: column;
+  }
 
-    
-      .text-content {
+    .text-content {
         width: 48%;
         padding-right: 1%;
-      }
-
-      .img-content {
+        @media @mobile {
+          width: 100%;
+        }
+    }
+    .img-content {
         width: 48%;
         padding-left: 1%;
+        @media @mobile {
+          width: 100%;
+        }
 
         img {
           border-radius: 10px;
         }
-      }
     }
+  }
   
 
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
+    @media @mobile {
+      display: flex;
+      flex-direction: column-reverse;
+    }
 
     .text-content {
       padding-left: 1%;
@@ -61,6 +81,9 @@
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
+    @media @mobile {
+      width: 100%;
+    }
 
     img {
       border-radius: 10px;
@@ -72,12 +95,20 @@
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
+    @media @mobile {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+    }
     .btn {
       .custom-button(@button-bg);
     }
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      @media @mobile {
+        width: 100%;
+      }
     }
   }
 }// home
